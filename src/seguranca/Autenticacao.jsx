@@ -45,10 +45,10 @@ export const getUsuario = () => {
 }
 
 export const gravaAutenticacao = (json) => {
-    localStorage.setItem(NOMEAPP+'/autenticao',JSON.stringify(json));
+    localStorage.setItem(NOMEAPP+'/autenticacao',JSON.stringify(json));
 }
 
 export const logout = (json) => {
-    localStorage.setItem(NOMEAPP+'/autenticao',
+    localStorage.setItem(NOMEAPP+'/autenticacao',
     JSON.stringify({auth : false , token : ""}));
 }
