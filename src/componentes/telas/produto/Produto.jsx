@@ -10,6 +10,7 @@ import {
 import Tabela from "./Tabela";
 import Form from "./Form";
 import Carregando from "../../comuns/Carregando";
+import WithAuth from "../../../seguranca/WithAuth";
 
 function Produto() {
 
@@ -107,4 +108,4 @@ function Produto() {
     )
 }
 
-export default Produto;
+export default WithAuth(Produto);

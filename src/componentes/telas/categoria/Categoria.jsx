@@ -6,6 +6,7 @@ import { getCategoriaServico, getCategoriaServicoPorCodigoAPI ,
 import Tabela from "./Tabela";
 import Form from "./Form";
 import Carregando from "../../comuns/Carregando";
+import WithAuth from "../../../seguranca/WithAuth";
 
 function Categoria(){
 
@@ -86,4 +87,4 @@ function Categoria(){
     )
 }
 
-export default Categoria;
+export default WithAuth(Categoria);
